@@ -25,7 +25,7 @@ font-size: 40px;
 }
 
 .layer1{
-    height: 300px;
+    height: 400px;
     background: radial-gradient(#e66465, #9198e5);
     display: flex;
     align-items: center;
@@ -36,4 +36,21 @@ font-size: 40px;
 #result{
   color: rgb(205, 64, 179);  
   font-size: 100px;
+}
+
+img{
+
+  height:100px;
+  width: 100px;
+}
+.buttons{
+text-align: center;
+margin-top: 15px;
+}
+
+button{
+  cursor:pointer;
+  font-size: 20px;
+  border-radius: 5px;
+  
 }
