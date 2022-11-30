@@ -1,31 +1,67 @@
 // array of possible choices 
-const choices=[
-0,1,2,3,4
-]
+const choices=[ 0,1,2,3,4];
 
 
-/// There random events for the three slots of the machine that choose from 5 posible choices 
-let slotA= Math.floor(Math.random()* choices.length)
-let slotB= Math.floor(Math.random()* choices.length)
-let slotC= Math.floor(Math.random()* choices.length)
+function getRandomNumber(){
+let ranNum= Math.floor(Math.random()* choices.length);
+return ranNum;
+}
+console.log(getRandomNumber());
 
-let result = [slotA,slotB,slotC];
-console.log(result); 
+function getElements(id){
+return document.getElementById(id)
+}
+console.log(getElements('0'));
 
-// DOM references &  outcomes that are posible: 3 match | 2 match | none match 
-function addElements(){
-firstOutCome= document.getElementById('0').innerHTML=slotA;
-secondOutCome= document.getElementById('1').innerHTML=slotB;
-thirdOutCome= document.getElementById('2').innerHTML=slotC;
+function wheel(){
 
-// outcome possiblities
-if(slotA==slotB && slotA==slotC && slotB==slotC){
-    return document.getElementById('result').innerHTML="You Won"
-}else if(slotA==slotB || slotA==slotC || slotB==slotC){
-    return document.getElementById('result').innerHTML= "Two out of three is good"
-}else{
-    return document.getElementById('result').innerHTML=" You Lose. Try again."
-}}
-addElements()
+let first = getElements('0');
+let second = getElements('1');
+let third = getElements('2');
 
+let slotA = getRandomNumber();
+let slotB = getRandomNumber();
+let slotC = getRandomNumber()
+
+
+first.innerHTML= `${slotA}`;
+second.innerHTML= `${slotB}`;
+third.innerHTML= `${slotC}`;
+//  DOM references &  outcomes that are posible: 3 match | 2 match | none match 
+if(slotA===slotB && slotA===slotC && slotB===slotC){
+    return document.getElementById('result').innerHTML="You win"
+} else if(slotA===slotB ||slotA===slotC || slotB=== slotC){
+    return document.getElementById('result').innerHTML="Two out of Three!"
+} else{
+    return document.getElementById('result').innerHTML="You Lost. Try Again"
+
+}
+}
+
+
+
+
+
+
+//  DOM references &  outcomes that are posible: 3 match | 2 match | none match 
+
+// function addElements(){
+// / firstOutCome= document.getElementById('0').innerHTML=slotA
+// // secondOutCome= document.getElementById('1').innerHTML=slotB;
+// // thirdOutCome= document.getElementById('2').innerHTML=slotC;
+// // }
+// addElements();
+
+// function outcomes(){
+
+
+// if(slotA===slotB && slotA===slotC && slotB===slotC){
+//     return document.getElementById('result').innerHTML="You win"
+// } else if(slotA===slotB ||slotA===slotC || slotB=== slotC){
+//     return document.getElementById('result').innerHTML="Two out of Three!"
+// } else{
+//     return document.getElementById('result').innerHTML="You Lost. Try Again"
+// }
+// }
+// outcomes();
 
