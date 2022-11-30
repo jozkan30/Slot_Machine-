@@ -36,6 +36,8 @@ if(slotA===slotB && slotA===slotC && slotB===slotC){
 }
 } 
 
+
+// resets slots back to ?
 function reset(){
  let stopA = getElements('0')
  let stopB = getElements('1')
@@ -44,35 +46,5 @@ function reset(){
  stopA.innerHTML = "?";
  stopB.innerHTML = "?";
  stopC.innerHTML = "?";
-
-
 }
-
-
-
-
-
-
-
-//  DOM references &  outcomes that are posible: 3 match | 2 match | none match 
-
-// function addElements(){
-// / firstOutCome= document.getElementById('0').innerHTML=slotA
-// // secondOutCome= document.getElementById('1').innerHTML=slotB;
-// // thirdOutCome= document.getElementById('2').innerHTML=slotC;
-// // }
-// addElements();
-
-// function outcomes(){
-
-
-// if(slotA===slotB && slotA===slotC && slotB===slotC){
-//     return document.getElementById('result').innerHTML="You win"
-// } else if(slotA===slotB ||slotA===slotC || slotB=== slotC){
-//     return document.getElementById('result').innerHTML="Two out of Three!"
-// } else{
-//     return document.getElementById('result').innerHTML="You Lost. Try Again"
-// }
-// }
-// outcomes();
 
