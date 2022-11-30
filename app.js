@@ -11,7 +11,6 @@ console.log(getRandomNumber());
 function getElements(id){
 return document.getElementById(id)
 }
-console.log(getElements('0'));
 
 function wheel(){
 
@@ -34,9 +33,21 @@ if(slotA===slotB && slotA===slotC && slotB===slotC){
     return document.getElementById('result').innerHTML="Two out of Three!"
 } else{
     return document.getElementById('result').innerHTML="You Lost. Try Again"
+}
+} 
+
+function reset(){
+ let stopA = getElements('0')
+ let stopB = getElements('1')
+ let stopC = getElements('2')
+
+ stopA.innerHTML = "?";
+ stopB.innerHTML = "?";
+ stopC.innerHTML = "?";
+
 
 }
-}
+
 
 
 
