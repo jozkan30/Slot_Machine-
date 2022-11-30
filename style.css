@@ -18,13 +18,22 @@ text-align: center;
     width: 200px;
     background-color: rgb(203, 21, 167);
     border-radius: 30px;
-    
 
 }
+p{
+font-size: 40px;
+}
+
 .layer1{
     height: 300px;
     background: radial-gradient(#e66465, #9198e5);
     display: flex;
     align-items: center;
     border-radius: 30px;
+}
+
+
+#result{
+  color: rgb(205, 64, 179);  
+  font-size: 100px;
 }
