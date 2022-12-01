@@ -1,12 +1,20 @@
 // array of possible choices 
-const choices=[ 0,1,2,3,4];
+// const choices=[ 0,1,2,3,4];
+// const choices=["Cherry", "Bannna", "7", "Cowboy", "bread"];
+
+const choices=[
+   ' 🍌',
+   '🌶 ',
+    '🎩',
+
+];
 
 
 function getRandomNumber(){
-let ranNum= Math.floor(Math.random()* choices.length);
+let ranNum= choices[Math.floor(Math.random()* choices.length)];
 return ranNum;
 }
-console.log(getRandomNumber());
+// console.log(getRandomNumber());
 
 function getElements(id){
 return document.getElementById(id)
@@ -26,6 +34,7 @@ let slotC = getRandomNumber()
 first.innerHTML= `${slotA}`;
 second.innerHTML= `${slotB}`;
 third.innerHTML= `${slotC}`;
+
 //  DOM references &  outcomes that are posible: 3 match | 2 match | none match 
 if(slotA===slotB && slotA===slotC && slotB===slotC){
     return document.getElementById('result').innerHTML="You win"
@@ -46,5 +55,7 @@ function reset(){
  stopA.innerHTML = "?";
  stopB.innerHTML = "?";
  stopC.innerHTML = "?";
+
 }
+ 
 
