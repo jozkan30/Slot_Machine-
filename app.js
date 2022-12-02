@@ -51,10 +51,13 @@ function reset(){
  let stopA = getElements('0')
  let stopB = getElements('1')
  let stopC = getElements('2')
-
+ let stopD = getElements('result')
+ 
  stopA.innerHTML = "?";
  stopB.innerHTML = "?";
  stopC.innerHTML = "?";
+ stopD.innerHTML= " "
+
 
 }
  
