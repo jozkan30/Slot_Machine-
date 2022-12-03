@@ -58,3 +58,6 @@ function reset(){
  stopC.innerHTML = "?";
  stopD.innerHTML= " "
 }
+
+
+
