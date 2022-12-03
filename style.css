@@ -1,6 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+header{
+background-color: rgb(119, 56, 168);
+padding-top: 1em;
+padding-left: 1em;
+padding-right: 1em;
+}
+#oc,#jack,#war,#eng,#can,#china,#spa,#about{
+background-color: black; opacity: .6;
+border-style: solid;
+color:white;
+border-color: black;
+border-radius: 2em;
+font-size: 20px;
+}
+#oc:hover,#jack:hover,#war:hover,#eng:hover,#can:hover,#china:hover,#spa:hover,#about:hover{
+background-color: yellow;
+color:black
+}
+
+.top{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
 h1{
 text-align:center;
+color: rgb(205, 64, 179); 
+font-family: 'Michroma', sans-serif;
 }
+
+#ads{
+background-color: gray;
+height:75px;
+width:600px;
+margin: auto;
+border-radius: 5px;
+background-image:url(./banner.webp);
+background-size:100%;
+background-repeat:no-repeat;
+}
+
+
+
 
 table{
 margin-right: auto;
@@ -10,16 +53,16 @@ background-color: rgb(111, 38, 185);
 }
 .someImg{
 text-align: center;
-
+font-size: 70px;
 }
+
 .slot{
-    
     height: 200px;
     width: 200px;
     background-color: rgb(203, 21, 167);
     border-radius: 30px;
-
 }
+
 p{
 font-size: 40px;
 }
@@ -31,18 +74,24 @@ font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;    
-
     border-radius: 30px;
+
     
 }
 
 
-#result{
+#result {
   color: rgb(205, 64, 179);  
-  font-size: 100px;
+  font-size: 80px;
 }
-.wallet{
+
+#money {
   color: rgb(205, 64, 179); 
+
+}
+#wallet{
+  color: rgb(205, 64, 179); 
+  transform: translateX(40px);
 
 }
 
@@ -63,6 +112,7 @@ button{
 }
 
 body{
-  background-color:black }
+  background-color:rgb(247, 239, 239);
+}
 
   
