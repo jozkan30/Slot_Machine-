@@ -5,7 +5,9 @@ background-color: rgb(119, 56, 168);
 padding-top: 1em;
 padding-left: 1em;
 padding-right: 1em;
+border-radius: 10px;
 }
+
 #oc,#jack,#war,#eng,#can,#china,#spa,#about{
 background-color: black; opacity: .6;
 border-style: solid;
@@ -16,13 +18,14 @@ font-size: 20px;
 cursor: pointer;
 }
 
+
 #words{
 text-align: center;
 color:gray;
 font-size: 12px;
-
-
 }
+
+
 #oc:hover,#jack:hover,#war:hover,#eng:hover,#can:hover,#china:hover,#spa:hover,#about:hover{
 background-color: yellow;
 color:black
@@ -49,7 +52,16 @@ border-radius: 5px;
 background-image:url(./banner.webp);
 background-size:100%;
 background-repeat:no-repeat;
+animation-name: changeAd;
+animation-duration: 3s;
+animation-delay: 5s;
+animation-iteration-count: infinite;
 }
+
+@keyframes changeAd {
+  from{background-image:url(./banner.webp);}
+  to{background-image:url(./2.jpeg);}
+} 
 
 
 table{
@@ -75,7 +87,7 @@ font-size: 40px;
 }
 
 .layer1{
-  z-index: 2;
+  
     height: 400px;
     background: radial-gradient(#e66465, #9198e5);
     display: flex;
@@ -99,7 +111,7 @@ font-size: 40px;
 }
 #wallet{
   color: rgb(205, 64, 179); 
-  transform: translateX(40px);
+  font-family: 'Michroma', sans-serif;
 
 }
 
@@ -111,7 +123,15 @@ font-size: 40px;
   background-repeat: no-repeat;
   text-align: center;
   margin: auto;
+  margin-bottom: 50px;
+  cursor: pointer;
   
+}
+
+#other:hover{
+  border-style: double;
+  border-color: rgb(217, 255, 0);
+
 }
 .buttons{
 text-align: center;
@@ -138,18 +158,39 @@ font-size: 12px;
 font-size: 12px;
 text-align: center;
 cursor: pointer;
+color: azure;
 }
 
 details{
+  background-color: azure;opacity: .7;
   border-style: solid;
   border-color: black;
   font-size: 20px;
   padding: 10px; 
   margin: 5px;
+  cursor: pointer;
 
 }
 
+
+/* #test{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from{background-color:red;}
+  to{background-image:url('./2.jpeg');}
+} */
+
+
 body{
-  background-color:rgb(247, 239, 239);
+  background-color:rgb(25, 24, 24);
 }
 

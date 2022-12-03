@@ -25,7 +25,6 @@ function wheel(){
 let first = getElements('0');
 let second = getElements('1');
 let third = getElements('2');
-let money = getElements('wallet')
 
 let slotA = getRandomNumber();
 let slotB = getRandomNumber();
@@ -36,15 +35,19 @@ first.innerHTML= `${slotA}`;
 second.innerHTML= `${slotB}`;
 third.innerHTML= `${slotC}`;
 
+
+
 //  DOM references &  outcomes that are posible: 3 match | 2 match | none match 
 if(slotA===slotB && slotA===slotC && slotB===slotC){
     document.getElementById('result').innerHTML="You win"
 } else if(slotA===slotB ||slotA===slotC || slotB=== slotC){
-    document.getElementById('result').innerHTML="Two out of Three!"
+    document.getElementById('result').innerHTML="Two out of Three!"  
 } else{
     document.getElementById('result').innerHTML="You Lost. Try Again"
 }
 }
+
+
 
 // resets slots back to '?'
 function reset(){
@@ -58,6 +61,7 @@ function reset(){
  stopC.innerHTML = "?";
  stopD.innerHTML= " "
 }
+
 
 
 
