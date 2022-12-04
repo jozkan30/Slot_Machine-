@@ -13,5 +13,7 @@ Technologies Used: Javascript,HTML, CSS
 Getting Started: https://jozkan30.github.io/Slot_Machine-/
 
 
+Next Steps: In the future I plan on an effect that will show the array spinning through the array as as making the navigation bar, ratings, and feed back sections active. 
 
+ I would also like to create a wallet feature that will add or subtract based on the result of the game. 
 
