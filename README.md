@@ -2,6 +2,8 @@ Game Title: Slot Machine. Using an array of emjois a function will return three 
 
 
 
+![Alt text](Slot_machine_screenshot.png)
+
 
 
 
@@ -9,7 +11,6 @@ Technologies Used: Javascript,HTML, CSS
 
 
 Getting Started: https://jozkan30.github.io/Slot_Machine-/
-
 
 
 
