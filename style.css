@@ -211,9 +211,30 @@ color: yellow;
 
 }
 
+#data{
+color: aliceblue;
+
+
+}
+
+
+
+
+
+
+
 #share{
 float:right;
+}
 
+#saftey{
+color:white;
+border-color: azure;
+border-style: solid;
+}
+
+#reviews{
+color:azure
 }
 
 body{
