@@ -12,5 +12,10 @@ let answers=[
 
 function  getElements(id){
  return document.getElementById(id)
+}
 
+function ranques(){
+let ran = Math.floor(Math.random()*questions.length)
+let dom = questions[ran];
+return dom
 }

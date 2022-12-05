@@ -96,8 +96,10 @@ font-size: 20px;
 color: aliceblue;
 font-family: 'Michroma', sans-serif;
 margin-bottom: 20px;
+}
 
-
+#win{
+  color: white;
 }
 
 table{
@@ -183,7 +185,9 @@ button{
 
 
 #review{
-  border-top:10px solid rgb(205, 64, 179);    ;
+  border-top:10px solid rgb(205, 64, 179);    
+  border-bottom:10px solid rgb(205, 64, 179); 
+  padding: 10px;
 
 }
 #dscpt{
@@ -227,8 +231,8 @@ color: yellow;
 }
 
 #data{
-color: aliceblue;
-
+color: rgb(161, 199, 233);
+font-size: 30px;
 
 }
 
@@ -240,6 +244,11 @@ float:right;
 color:white;
 border-color: azure;
 border-style: solid;
+width: 300px;
+display: flex;
+flex-direction: column;
+
+
 }
 
 #reviews{
@@ -251,6 +260,8 @@ body{
 }
 
 
+
+/* Trivia CSS starts here */
 #trivia{
 margin-left: auto;
 margin-right: auto;
@@ -288,4 +299,15 @@ margin-left: auto;
 a{
 color:white;
 text-decoration: none;
+}
+
+@media (max-width: 500px){
+  h{
+
+
+
+  }
+
+
+
 }
