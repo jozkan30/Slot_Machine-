@@ -25,6 +25,12 @@ text-align: center;
 color:gray;
 font-size: 12px;
 }
+#words2{
+  text-align: center;
+  color:gray;
+  font-size: 12px;
+  }
+
 
 
 #oc:hover,#jack:hover,#war:hover,#eng:hover,#can:hover,#china:hover,#spa:hover,#about:hover{
@@ -75,6 +81,15 @@ animation-iteration-count: infinite;
 
   
 } 
+#ad2{
+background-color: gray;
+height:90px;
+width:600px;
+margin: auto;
+border-radius: 5px;
+background-image:url(./3.jpg);
+background-size:100%;
+}
 
 #rate{
 font-size: 20px;
@@ -217,12 +232,6 @@ color: aliceblue;
 
 }
 
-
-
-
-
-
-
 #share{
 float:right;
 }
@@ -241,3 +250,42 @@ body{
   background-color:rgb(25, 24, 24);
 }
 
+
+#trivia{
+margin-left: auto;
+margin-right: auto;
+width: 200px;
+margin-top: 30px;
+display: flex;
+justify-content: center;
+justify-content: space-between;
+
+}
+
+#history, #ent, #sci, #sports {
+  color:white;
+  font-size: 25px;
+  cursor: pointer;
+  list-style-type:none;
+  text-align: center;
+  border: solid;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 5px;
+
+}
+
+#categories{
+padding: 5px;
+width: 500px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: auto;
+margin-left: auto;
+}
+
+a{
+color:white;
+text-decoration: none;
+}
