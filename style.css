@@ -106,7 +106,7 @@ table{
 margin-right: auto;
 margin-left: auto;  
 background-color: rgb(111, 38, 185);
-
+box-shadow: 15px 15px;
 }
 .someImg{
 text-align: center;
@@ -118,6 +118,7 @@ font-size: 70px;
     width: 200px;
     background-color: rgb(203, 21, 167);
     border-radius: 30px;
+
 }
 
 p{
@@ -191,7 +192,7 @@ button{
 
 }
 #dscpt{
-font-size: 12px;
+font-size: 18px;
 
 }
 
@@ -301,12 +302,18 @@ color:white;
 text-decoration: none;
 }
 
-@media (max-width: 500px){
-  h{
 
+@media (max-width:500px){
+
+header{
+font-size: 10px;
+}
 
 
   }
+
+
+
 
 
 
