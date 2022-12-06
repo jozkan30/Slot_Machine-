@@ -7,22 +7,22 @@ const choices=[
 ];
 
 let wallet={
-money:-5
+money:-5 };
 
-};
-document.getElementById('win').innerHTML=wallet.money 
-
-
+// A random emjoi from the array 
 function getRandomNumber(){
 let ranNum= choices[Math.floor(Math.random()* choices.length)];
 return ranNum;
 }
-getRandomNumber()
 
+getRandomNumber()
+// A function for grabing elements
 function getElements(id){
 return document.getElementById(id)
 }
 
+
+// Main function: 
 function wheel(){
 
 let first = getElements('0');
@@ -45,7 +45,6 @@ if(slotA===slotB && slotA===slotC && slotB===slotC){
 
     document.getElementById('win').innerHTML=wallet.money += 10
 
-   
     
 }else if(slotA===slotB ||slotA===slotC || slotB=== slotC)
 {

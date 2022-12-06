@@ -110,7 +110,7 @@ box-shadow: 15px 15px;
 }
 .someImg{
 text-align: center;
-font-size: 70px;
+font-size: 80px;
 }
 
 .slot{
@@ -301,20 +301,7 @@ a{
 color:white;
 text-decoration: none;
 }
-
-
-@media (max-width:500px){
-
-header{
-font-size: 10px;
+a:hover{
+color: rgb(17, 17, 17);  
 }
 
-
-  }
-
-
-
-
-
-
-}
