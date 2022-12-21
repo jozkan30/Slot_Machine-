@@ -2,6 +2,9 @@ Game Title: Slot Machine. Using an array of emjois a function will return three 
 
 It's fun and kitschy ! => as is Las Vegas!
 
+This is a clone of sorts of some of the slot machine apps I found online. Enjoy!
+
+
 
 ![Alt text](Slot_machine_screenshot.png)
 
